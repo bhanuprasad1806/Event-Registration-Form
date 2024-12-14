@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <style>
+       
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            width: auto;
+        }
+        .checkbox-group label {
+            margin-right: 15px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Registration Form</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Information</legend>
+            <p>Please fill out the form to book your spot at the event:</p>
+            
+            <!-- First Name -->
+            <label for="first-name">First Name</label><br>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required><br>
+
+            <!-- Email -->
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone No</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+
+            <!-- Ticket Type -->
+            <label for="ticket-type">Choose Ticket Type</label><br>
+            <select name="ticket-type" id="ticket-type" required>
+                <option value="hostler">Hostler</option>
+                <option value="dayscholar">Dayscholar</option>
+            </select><br>
+
+            <!-- Meal Preferences -->
+            <label for="meal-preference">Choose Meal Preference</label><br>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="meal-preference" value="vegetarian"> Vegetarian
+                </label>
+                <label>
+                    <input type="checkbox" name="meal-preference" value="non-veg"> Non-Veg
+                </label>
+                <label>
+                    <input type="checkbox" name="meal-preference" value="gluten-free"> Gluten-Free
+                </label>
+                <label>
+                    <input type="checkbox" name="meal-preference" value="soups"> Soups
+                </label>
+            </div><br>
+
+            <!-- Additional Information -->
+            <label for="additional-info">Additional Information</label><br>
+            <textarea id="additional-info" name="additional-info" placeholder="Enter your message" rows="4"></textarea><br>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
